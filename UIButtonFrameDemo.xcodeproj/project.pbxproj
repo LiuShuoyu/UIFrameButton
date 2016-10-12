@@ -18,6 +18,7 @@
 		46FF57771DA2AC3900DDD530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57721DA2AC3900DDD530 /* ViewController.m */; };
 		46FF577A1DA2AC5400DDD530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57791DA2AC5400DDD530 /* AppDelegate.m */; };
 		848429061DADECC100BC7093 /* UIFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848429051DADECC100BC7093 /* UIFrameButton.m */; };
+		867AD7E06FCB48CB5884947A /* libPods-UIButtonFrameDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEADC5C740CCD9652E9AF74 /* libPods-UIButtonFrameDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AEADC5C740CCD9652E9AF74 /* libPods-UIButtonFrameDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIButtonFrameDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FF57331DA2AB9300DDD530 /* UIButtonFrameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIButtonFrameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FF57371DA2AB9300DDD530 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46FF57421DA2AB9300DDD530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		46FF57791DA2AC5400DDD530 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		848429041DADECC100BC7093 /* UIFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFrameButton.h; sourceTree = "<group>"; };
 		848429051DADECC100BC7093 /* UIFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFrameButton.m; sourceTree = "<group>"; };
+		CF893D2AFDA2034710AA41E4 /* Pods-UIButtonFrameDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonFrameDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonFrameDemo/Pods-UIButtonFrameDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ECEBD8D2696CD71FF499CF3D /* Pods-UIButtonFrameDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonFrameDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonFrameDemo/Pods-UIButtonFrameDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867AD7E06FCB48CB5884947A /* libPods-UIButtonFrameDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +101,8 @@
 				46FF574F1DA2AB9400DDD530 /* UIButtonFrameDemoTests */,
 				46FF575A1DA2AB9400DDD530 /* UIButtonFrameDemoUITests */,
 				46FF57341DA2AB9300DDD530 /* Products */,
+				8882927A296FA303469388C2 /* Pods */,
+				AEDEF753F63BB940CEDFA180 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +180,23 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		8882927A296FA303469388C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECEBD8D2696CD71FF499CF3D /* Pods-UIButtonFrameDemo.debug.xcconfig */,
+				CF893D2AFDA2034710AA41E4 /* Pods-UIButtonFrameDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEDEF753F63BB940CEDFA180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AEADC5C740CCD9652E9AF74 /* libPods-UIButtonFrameDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46FF57601DA2AB9400DDD530 /* Build configuration list for PBXNativeTarget "UIButtonFrameDemo" */;
 			buildPhases = (
+				F369B00636622BE6A2B60C5D /* [CP] Check Pods Manifest.lock */,
 				46FF572F1DA2AB9300DDD530 /* Sources */,
 				46FF57301DA2AB9300DDD530 /* Frameworks */,
 				46FF57311DA2AB9300DDD530 /* Resources */,
+				DD502D114F66BE59B6B0875C /* [CP] Embed Pods Frameworks */,
+				A76801765E43A608C3EB67D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +267,7 @@
 				TargetAttributes = {
 					46FF57321DA2AB9300DDD530 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8N585W264R;
 					};
 					46FF574B1DA2AB9400DDD530 = {
 						CreatedOnToolsVersion = 7.2;
@@ -296,6 +324,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A76801765E43A608C3EB67D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButtonFrameDemo/Pods-UIButtonFrameDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD502D114F66BE59B6B0875C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButtonFrameDemo/Pods-UIButtonFrameDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F369B00636622BE6A2B60C5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46FF572F1DA2AB9300DDD530 /* Sources */ = {
@@ -437,8 +513,10 @@
 		};
 		46FF57611DA2AB9400DDD530 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEBD8D2696CD71FF499CF3D /* Pods-UIButtonFrameDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8N585W264R;
 				INFOPLIST_FILE = UIButtonFrameDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -449,8 +527,10 @@
 		};
 		46FF57621DA2AB9400DDD530 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF893D2AFDA2034710AA41E4 /* Pods-UIButtonFrameDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8N585W264R;
 				INFOPLIST_FILE = UIButtonFrameDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
