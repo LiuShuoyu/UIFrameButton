@@ -15,9 +15,9 @@
 		46FF57731DA2AC3900DDD530 /* UIBeginDistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF576A1DA2AC3900DDD530 /* UIBeginDistanceViewController.m */; };
 		46FF57741DA2AC3900DDD530 /* UIButtonFrameStyleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF576C1DA2AC3900DDD530 /* UIButtonFrameStyleDemoViewController.m */; };
 		46FF57751DA2AC3900DDD530 /* UICenterDistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF576E1DA2AC3900DDD530 /* UICenterDistanceViewController.m */; };
-		46FF57761DA2AC3900DDD530 /* UIFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57701DA2AC3900DDD530 /* UIFrameButton.m */; };
 		46FF57771DA2AC3900DDD530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57721DA2AC3900DDD530 /* ViewController.m */; };
 		46FF577A1DA2AC5400DDD530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57791DA2AC5400DDD530 /* AppDelegate.m */; };
+		848429061DADECC100BC7093 /* UIFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848429051DADECC100BC7093 /* UIFrameButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +55,12 @@
 		46FF576C1DA2AC3900DDD530 /* UIButtonFrameStyleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonFrameStyleDemoViewController.m; sourceTree = "<group>"; };
 		46FF576D1DA2AC3900DDD530 /* UICenterDistanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICenterDistanceViewController.h; sourceTree = "<group>"; };
 		46FF576E1DA2AC3900DDD530 /* UICenterDistanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICenterDistanceViewController.m; sourceTree = "<group>"; };
-		46FF576F1DA2AC3900DDD530 /* UIFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFrameButton.h; sourceTree = "<group>"; };
-		46FF57701DA2AC3900DDD530 /* UIFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFrameButton.m; sourceTree = "<group>"; };
 		46FF57711DA2AC3900DDD530 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		46FF57721DA2AC3900DDD530 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		46FF57781DA2AC5400DDD530 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46FF57791DA2AC5400DDD530 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848429041DADECC100BC7093 /* UIFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFrameButton.h; sourceTree = "<group>"; };
+		848429051DADECC100BC7093 /* UIFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFrameButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,7 @@
 		46FF572A1DA2AB9300DDD530 = {
 			isa = PBXGroup;
 			children = (
+				848429021DADECC100BC7093 /* Pod */,
 				46FF57351DA2AB9300DDD530 /* UIButtonFrameDemo */,
 				46FF574F1DA2AB9400DDD530 /* UIButtonFrameDemoTests */,
 				46FF575A1DA2AB9400DDD530 /* UIButtonFrameDemoUITests */,
@@ -120,8 +121,6 @@
 				46FF576C1DA2AC3900DDD530 /* UIButtonFrameStyleDemoViewController.m */,
 				46FF576D1DA2AC3900DDD530 /* UICenterDistanceViewController.h */,
 				46FF576E1DA2AC3900DDD530 /* UICenterDistanceViewController.m */,
-				46FF576F1DA2AC3900DDD530 /* UIFrameButton.h */,
-				46FF57701DA2AC3900DDD530 /* UIFrameButton.m */,
 				46FF57711DA2AC3900DDD530 /* ViewController.h */,
 				46FF57721DA2AC3900DDD530 /* ViewController.m */,
 				46FF57441DA2AB9300DDD530 /* LaunchScreen.storyboard */,
@@ -155,6 +154,23 @@
 				46FF575D1DA2AB9400DDD530 /* Info.plist */,
 			);
 			path = UIButtonFrameDemoUITests;
+			sourceTree = "<group>";
+		};
+		848429021DADECC100BC7093 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				848429031DADECC100BC7093 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		848429031DADECC100BC7093 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				848429041DADECC100BC7093 /* UIFrameButton.h */,
+				848429051DADECC100BC7093 /* UIFrameButton.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +305,8 @@
 				46FF57771DA2AC3900DDD530 /* ViewController.m in Sources */,
 				46FF57751DA2AC3900DDD530 /* UICenterDistanceViewController.m in Sources */,
 				46FF57741DA2AC3900DDD530 /* UIButtonFrameStyleDemoViewController.m in Sources */,
+				848429061DADECC100BC7093 /* UIFrameButton.m in Sources */,
 				46FF57381DA2AB9300DDD530 /* main.m in Sources */,
-				46FF57761DA2AC3900DDD530 /* UIFrameButton.m in Sources */,
 				46FF57731DA2AC3900DDD530 /* UIBeginDistanceViewController.m in Sources */,
 				46FF577A1DA2AC5400DDD530 /* AppDelegate.m in Sources */,
 			);
@@ -510,6 +526,7 @@
 				46FF57621DA2AB9400DDD530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46FF57631DA2AB9400DDD530 /* Build configuration list for PBXNativeTarget "UIButtonFrameDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +535,7 @@
 				46FF57651DA2AB9400DDD530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46FF57661DA2AB9400DDD530 /* Build configuration list for PBXNativeTarget "UIButtonFrameDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +544,7 @@
 				46FF57681DA2AB9400DDD530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
