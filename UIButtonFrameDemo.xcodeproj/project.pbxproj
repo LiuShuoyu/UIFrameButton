@@ -18,6 +18,7 @@
 		46FF57771DA2AC3900DDD530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57721DA2AC3900DDD530 /* ViewController.m */; };
 		46FF577A1DA2AC5400DDD530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF57791DA2AC5400DDD530 /* AppDelegate.m */; };
 		848429061DADECC100BC7093 /* UIFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848429051DADECC100BC7093 /* UIFrameButton.m */; };
+		84A154BC1DAF30E00058C8A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A154BB1DAF30E00058C8A1 /* UIKit.framework */; };
 		867AD7E06FCB48CB5884947A /* libPods-UIButtonFrameDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEADC5C740CCD9652E9AF74 /* libPods-UIButtonFrameDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		46FF57791DA2AC5400DDD530 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		848429041DADECC100BC7093 /* UIFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFrameButton.h; sourceTree = "<group>"; };
 		848429051DADECC100BC7093 /* UIFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFrameButton.m; sourceTree = "<group>"; };
+		84A154BB1DAF30E00058C8A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF893D2AFDA2034710AA41E4 /* Pods-UIButtonFrameDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonFrameDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonFrameDemo/Pods-UIButtonFrameDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ECEBD8D2696CD71FF499CF3D /* Pods-UIButtonFrameDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonFrameDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonFrameDemo/Pods-UIButtonFrameDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A154BC1DAF30E00058C8A1 /* UIKit.framework in Frameworks */,
 				867AD7E06FCB48CB5884947A /* libPods-UIButtonFrameDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +195,7 @@
 		AEDEF753F63BB940CEDFA180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A154BB1DAF30E00058C8A1 /* UIKit.framework */,
 				2AEADC5C740CCD9652E9AF74 /* libPods-UIButtonFrameDemo.a */,
 			);
 			name = Frameworks;
