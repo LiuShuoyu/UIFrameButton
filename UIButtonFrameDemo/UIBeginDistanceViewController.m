@@ -11,39 +11,36 @@
 
 @interface UIBeginDistanceViewController ()
 
-@property (nonatomic,strong)UIFrameButton *btn;
 @end
 
 @implementation UIBeginDistanceViewController
 
 - (void)viewDidLoad
 {
-    [self.view addSubview:self.btn];
-    self.view.backgroundColor =[UIColor whiteColor];
+    UIFrameButton *btn =({
+        
+        UIFrameButton *newBtn=[[UIFrameButton  alloc] initWithFrame:CGRectMake(10, 10, 300, 300)];
+        [newBtn addTarget:self action:@selector(clikBtn:) forControlEvents:UIControlEventTouchUpInside];
+        newBtn.center =self.view.center;
+        [newBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [newBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+        [newBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateHighlighted];
+        
+        [newBtn setTitle:@"点击我,我开始移动" forState:UIControlStateNormal];
+        newBtn.frameStyle =LeftImageWithRightTitleFrameStyle;
+        newBtn.beginDistance =1;
+        newBtn.layer.borderColor = [UIColor grayColor].CGColor;
+        newBtn.layer.cornerRadius = 5;
+        newBtn.layer.borderWidth =1;
+        newBtn.layer.masksToBounds =YES;
+        newBtn;
+    });
+    
+    [self.view addSubview:btn];
+    self.view.backgroundColor =[UIColor whiteColor];    
     
 }
 
-- (UIFrameButton *)btn
-{
-    if (!_btn)
-    {
-        _btn=[[UIFrameButton  alloc] initWithFrame:CGRectMake(10, 10, 300, 300)];
-        [_btn addTarget:self action:@selector(clikBtn:) forControlEvents:UIControlEventTouchUpInside];
-        _btn.center =self.view.center;
-        [_btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_btn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
-        [_btn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateHighlighted];
-
-        [_btn setTitle:@"点击我,我开始移动" forState:UIControlStateNormal];
-        _btn.frameStyle =LeftImageWithRightTitleFrameStyle;
-        _btn.beginDistance =1;
-        _btn.layer.borderColor = [UIColor grayColor].CGColor;
-        _btn.layer.cornerRadius = 5;
-        _btn.layer.borderWidth =1;
-        _btn.layer.masksToBounds =YES;
-    }
-    return _btn;
-}
 
 
 - (void)clikBtn:(UIFrameButton *)btn
