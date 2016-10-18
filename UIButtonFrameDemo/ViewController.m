@@ -58,7 +58,7 @@
         cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:celldentifier];
     }
     cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;
-    NSArray *demoStyleArray =@[@"UIButtonFrameStyleDemo",@"UIButtonBeginDistanceDemo",@"UIButtonCenterDistanceDemo"];
+    NSArray *demoStyleArray =@[@"4种布局样式",@"设置起始距离",@"设置subViews之间的距离"];
     cell.textLabel.text = demoStyleArray[indexPath.row];
     
     return cell;

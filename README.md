@@ -55,3 +55,7 @@ btn.beginDistance = 5 //设置subViews的开始的距离
 
 * QQ 476804765
 * Email:13281250969@163.com
+
+##下一步功能
+
+* 发布到cocoapods

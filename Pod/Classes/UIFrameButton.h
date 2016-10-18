@@ -8,12 +8,12 @@
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSInteger, UIButtonFrameSttyle)
 {
-    //左右关系
-   LeftImageWithRightTitleFrameStyle=0,
-   LeftTitleWithRightImageFrameStyle,
-    //上下关系
-   TopImageWithbuttomTitleFrameStyle,
-   TopTitleWithbuttomImageFrameStyle,
+    
+   LeftImageWithRightTitleFrameStyle=0, //左边title 右边image
+   LeftTitleWithRightImageFrameStyle,   //左边image 右边title
+   TopImageWithbuttomTitleFrameStyle,   //上image 下title
+    TopTitleWithbuttomImageFrameStyle,  //上title 下image
+
 };
 
 
