@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "UIFrameButton"
-s.version          = "0.1"
+s.version          = "1.0"
 s.summary          = "A layout button of UIFrameButton."
 s.homepage         = "https://github.com/LiuShuoyu/UIFrameButton"
 s.license          = 'MIT'
