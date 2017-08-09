@@ -56,6 +56,6 @@ TopTitleWithbuttomImageFrameStyle,
 * QQ 476804765
 * Email:13281250969@163.com
 
-##下一步功能
+##发布到cocoapods
+*pod 'UIFrameButton', '~> 1.0'
 
-* 发布到cocoapods
